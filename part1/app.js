@@ -110,7 +110,9 @@ app.get('/api/dogs', async (req, res) => {
     res.join(rows);
     } catch (error) {
         console.log(error);
-        res.status
+        res.status(500).json({
+            error: 'Failed to Retr'
+        })
     }
     }
 })
