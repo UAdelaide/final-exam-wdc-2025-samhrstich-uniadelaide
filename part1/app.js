@@ -94,7 +94,11 @@ let db;
 })();
 
 
-app.get('/api/dogs', async)
+app.get('/api/dogs', async (req, res) => {
+    try {
+        const 
+    }
+})
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
