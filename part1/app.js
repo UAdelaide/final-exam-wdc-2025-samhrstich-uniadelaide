@@ -173,8 +173,8 @@ app.get('/api/walkers/summary', async (req, res) => {
     `;
 
     const [rows] = await db.execute(query);
-    res.json(rows
-    )
+    res.json(rows);
+    
     }
 })
 
