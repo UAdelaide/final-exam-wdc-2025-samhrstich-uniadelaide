@@ -49,7 +49,7 @@ let db;
                 ('colepalmer', 'cole@example.com', 'hashed345', 'owner')
             `);
 
-            await 
+            await db.execute(``)
 
         }
     }
