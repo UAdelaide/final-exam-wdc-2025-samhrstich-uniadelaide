@@ -35,7 +35,7 @@ let db;
             database: 'DogWalkService'
         });
 
-        
+        const [userrows]
     }
 })
 
