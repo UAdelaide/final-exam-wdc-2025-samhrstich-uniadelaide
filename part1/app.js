@@ -78,7 +78,7 @@ let db;
                 WHERE requests_id IN (2, 3)
             `);
             await db.execute(`
-                INSERT INTO WalkRatings (re)`)
+                INSERT INTO WalkRatings (request_id, walker_id, owner_id)`)
         }
     }
 })
