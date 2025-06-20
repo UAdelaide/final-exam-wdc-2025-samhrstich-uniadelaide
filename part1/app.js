@@ -97,7 +97,8 @@ let db;
     try {
         const [ratings] = await db.execute('SELECT * FROM WalkRatings');
 console.log('WalkRatings:', ratings);
-    }
+    } catch 
+
 };
 
 
