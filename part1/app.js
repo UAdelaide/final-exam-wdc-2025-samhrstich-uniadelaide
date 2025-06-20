@@ -85,8 +85,9 @@ let db;
                 (SELECT user_iD FROM Users WHERE username = 'benjamin'), 1, 'Kicked my dog')
             `)
 
-            console.log("Dummy data in da")
+            console.log('Dummy Data in database');
         }
+        
     }
 })
 
