@@ -5,9 +5,9 @@ body {
 
 }
 
-p {
+#app {
   color: #00B7FF;
   position:absolute;
-  justify-content:right
+  justify-content:right;
   align-content:end;
 }
