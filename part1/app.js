@@ -87,6 +87,8 @@ let db;
 
             console.log('Dummy Data in database');
         }
+
+    } catch (err) {
         
     }
 })
