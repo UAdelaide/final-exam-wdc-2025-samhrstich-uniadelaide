@@ -106,7 +106,8 @@ app.get('/api/dogs', async (req, res) => {
         ORDER BY d.name
     `;
 
-    const [rows]
+    const [rows]= await db.execute(query);
+    res.join(reo)
     }
 })
 
