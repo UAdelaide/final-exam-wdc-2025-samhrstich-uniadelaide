@@ -172,7 +172,7 @@ app.get('/api/walkers/summary', async (req, res) => {
         ORDER BY u.username
     `;
 
-    const 
+    const [rows] = await db.execute(query)
     }
 })
 
