@@ -49,7 +49,14 @@ let db;
                 ('colepalmer', 'cole@example.com', 'hashed345', 'owner')
             `);
 
-            await db.execute(``)
+            await db.execute(`
+        INSERT INTO Dogs (owner_id, name, size) VALUES
+        ((SELECT user_id FROM Users WHERE username = 'alice123'), 'Max', 'medium'),
+        ((SELECT user_id FROM Users WHERE username = 'carol123'), 'Bella', 'small'),
+        ((SELECT user_id FROM Users WHERE username = 'benjamin'), 'Bailey', 'medium'),
+        ((SELECT user_id FROM Users WHERE username = 'liam'), 'Rufus', 'small'),
+        ((SELECT user_id FROM Users WHERE username = 'colepalmer'), 'Flop', 'medium')
+      `);
 
         }
     }
