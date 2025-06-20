@@ -93,7 +93,8 @@ let db;
     }
 })();
 
-const [ratings] = await db.execute('SELECT')
+const [ratings] = await db.execute('SELECT * FROM WalkRatings');
+console
 
 
 app.get('/api/dogs', async (req, res) => {
