@@ -59,7 +59,7 @@ let db;
             `);
 
             await db.execute(`
-                INSERT INTO `)
+                INSERT INTO WalkRequests ()`)
 
         }
     }
