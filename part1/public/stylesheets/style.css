@@ -34,5 +34,6 @@ h1 {
 
 }
 #button:hover {
-  transform: scale(0.1) rotate(720)
+  transform: scale(0.1) rotate(720deg);
+  transition: 0.2 sec;
 }
