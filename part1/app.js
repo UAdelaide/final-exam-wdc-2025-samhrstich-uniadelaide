@@ -47,7 +47,9 @@ let db;
                 ('benjamin', 'benjamin@example.com', 'hashed868', 'owner'),
                 ('liam', 'liam@example.com', 'hashed687', 'owner'),
                 ('colepalmer', 'cole@example.com', 'hashed345', 'owner')
-        `);
+            `);
+
+            await 
 
         }
     }
