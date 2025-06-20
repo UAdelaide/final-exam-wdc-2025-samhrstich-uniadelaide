@@ -149,7 +149,8 @@ app.get('/api/walkers/summary', async (req, res) => {
     try {
         const query =`
         SELECT
-            u.username`
+            u.username as walker_username,
+            COALESCE(COUNT)`
     }
 })
 
