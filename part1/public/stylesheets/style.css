@@ -6,9 +6,10 @@ body {
 
 }
 h1 {
+  color:green;
   display:flex;
   justify-content:baseline;
-  align-content:;
+  align-content:center;
 }
 #app {
   color: #00B7FF;
