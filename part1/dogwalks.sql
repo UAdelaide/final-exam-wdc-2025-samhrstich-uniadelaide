@@ -69,4 +69,4 @@ VALUES
     ((SELECT user_id FROM Users WHERE username = 'carol123'), 'Bella', 'small'),
     ((SELECT user_id FROM Users WHERE username = 'benjamin'), 'Bailey', 'medium'),
     ((SELECT user_id FROM Users WHERE username = 'liam'), 'Rufus', 'small'),
-    ((SELECT user_id FROM Users WHERE username = ''
+    ((SELECT user_id FROM Users WHERE username = 'colepalmer'), 'Flop', 
