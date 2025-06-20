@@ -7,6 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 fetch("https://dog.ceo/api/breeds/image/random");
+  .then()
 
 
 module.exports = router;
