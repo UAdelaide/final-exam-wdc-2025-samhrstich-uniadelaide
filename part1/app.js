@@ -168,7 +168,11 @@ app.get('/api/walkers/summary', async (req, res) => {
         GROUP BYwa.walker_id
         ) completed_walks ON u.user_id = completed_walks.walker_id
         WHERE u.role = 'walker'
-        GROUP BY u.user_id, u.username, completed_walks`
+        GROUP BY u.user_id, u.username, completed_walks.completed_count
+        ORDER BY u.username
+    `;
+
+    const 
     }
 })
 
