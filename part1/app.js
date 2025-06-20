@@ -74,7 +74,8 @@ let db;
 
             await db.execute(`
                 UPDATE WalkRequests
-                SET  `)
+                SET  status= 'completed'
+                WHERE`)
         }
     }
 })
