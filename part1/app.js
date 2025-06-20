@@ -25,8 +25,8 @@ let db;
             user: 'root',
             password: ''
         });
-        await connection.query("CREATE DATABASE IF NOT EXISTS DogWalks");
-        
+        await connection.query("CREATE DATABASE IF NOT EXISTS DogWalkService");
+        await connection
     }
 })
 
