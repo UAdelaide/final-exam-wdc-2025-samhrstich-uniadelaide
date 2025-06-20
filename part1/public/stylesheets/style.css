@@ -11,7 +11,7 @@ body {
   position:relative;
   justify-content:right;
   align-content:end;
-  background: linear-gradient(to right, green, red);
+  background: linear-gradient(to right, rgb(64, 0, 64), red);
   border: 10px dashed purple;
   left: 100px;
 
