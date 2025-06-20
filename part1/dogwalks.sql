@@ -76,4 +76,4 @@ VALUES
     ((SELECT dog_id FROM Dogs WHERE name = 'Max',), '2025-06-10 08:00:00', 30, 'Parklands', 'open'),
     ((SELECT dog_id FROM Dogs WHERE name = 'Bella'), '2025-06-10 09:30:00', 45, 'Beachside Ave', 'accepted'),
     ((SELECT dog_id FROM Dogs WHERE name = 'Bailey'), '2025-07-15 10:45:00', 25, 'Everest', 'accepted'),
-    ((SELECT dog_id FROM Dogs WHERE name = 'Rufus'), '')
+    ((SELECT dog_id FROM Dogs WHERE name = 'Rufus'), '2025-04-15 ')
