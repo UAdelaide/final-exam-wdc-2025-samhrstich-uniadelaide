@@ -94,7 +94,7 @@ let db;
 })();
 
 const [ratings] = await db.execute('SELECT * FROM WalkRatings');
-console
+console.log('WalkRatings:', ratings)
 
 
 app.get('/api/dogs', async (req, res) => {
