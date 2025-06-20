@@ -11,5 +11,5 @@ body {
   position:absolute;
   justify-content:right;
   align-content:end;
-  background:
+  background: linear-gradient(to right, green, red)
 }
