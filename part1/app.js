@@ -82,7 +82,8 @@ let db;
                 (2, (SELECT user_id FROM Users WHERE username = 'bobwalker'),
                 (SELECT user_id FROM Users WHERE username = 'carol123'), 5, 'Lovely Guy!'),
                 (3, (SELECT user_if FROM Users WHERE username = 'bobwalker'),
-                (SELECT user_iD FROM Users WHERE username = 'benjamin'), 1, )`)
+                (SELECT user_iD FROM Users WHERE username = 'benjamin'), 1, 'Kicked my dog')
+                `)
         }
     }
 })
