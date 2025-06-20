@@ -107,7 +107,7 @@ app.get('/api/dogs', async (req, res) => {
     `;
 
     const [rows]= await db.execute(query);
-    res.join(rows);
+    res.json(rows);
     } catch (error) {
         console.log(error);
         res.status(500).json({
@@ -135,7 +135,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
     `;
 
     const [rows] =await db.execute(query);
-    res.join[rows];
+    res.json[rows];
     } catch (error) {
         console.log('Error grabbing the walkrequests', error);
         res.status(500).json({
