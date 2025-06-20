@@ -3,7 +3,7 @@
 <head>
     <title>Dog of the Day</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
-    <script src = ""></script>
+    <script src = "https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
 </head>
 
@@ -35,7 +35,7 @@
         methods: {
             async fetchDog() {
                 const res = await fetch('https://dog.ceo/api/breeds/image/random')
-                const  data = awaitres.json();
+                const  data = res.json();
                 this.dogImage = data.message;
             }
         }
