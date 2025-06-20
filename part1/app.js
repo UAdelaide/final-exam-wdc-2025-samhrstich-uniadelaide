@@ -70,7 +70,7 @@ let db;
                 INSERT INTO WalkApplications (request_id, walker_id, status) VALUES
                 (2, (SELECT user_id FROM Users WHERE username = 'bobwalker'), 'accepted),
                 (3, (SELECT user_id FROM Users WHERE username = 'bobwalker'), 'accepted')
-            `)
+            `);
 
             await db.execute(`
                 UPDATE WalkRequests
