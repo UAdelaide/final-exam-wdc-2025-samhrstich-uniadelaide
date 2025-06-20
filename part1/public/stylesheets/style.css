@@ -2,7 +2,7 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   display:flex;
-  background-color:blue;
+  background-color:rgb(144, 206, 91);
 
 }
 
@@ -11,7 +11,7 @@ body {
   position:relative;
   justify-content:right;
   align-content:end;
-  background: linear-gradient(to right, rgb(0, 64, 2), rgb(252, 255, 72));
+  background: linear-gradient(to right, rgb(77, 145, 79), rgb(0, 0, 0));
   border: 10px dashed purple;
   left: 100px;
 
