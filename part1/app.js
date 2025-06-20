@@ -155,7 +155,7 @@ app.get('/api/walkers/summary', async (req, res) => {
                 WHEN COUNT(wr.rating_id) > 0 THEN ROUND(AVG(wr.rating), 1)
                 ELSE NULL
             END as average_rating,
-            C`
+            COALESCE(completed_walks.completed_count = 0)`
     }
 })
 
