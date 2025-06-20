@@ -150,7 +150,7 @@ app.get('/api/walkers/summary', async (req, res) => {
         const query =`
         SELECT
             u.username as walker_username,
-            COALESCE(COUNT)`
+            COALESCE(COUNT(wr.rating_id), 0) as total_ratings`
     }
 })
 
