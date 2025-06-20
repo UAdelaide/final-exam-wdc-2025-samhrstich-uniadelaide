@@ -134,7 +134,9 @@ app.get('/api/walkrequests/open', async (req, res) => {
         ORDER BY wr.requested_time
     `;
 
-    const [rows]
+    const [rows] =await db.execute(query);
+    
+    }
     }
 })
 
