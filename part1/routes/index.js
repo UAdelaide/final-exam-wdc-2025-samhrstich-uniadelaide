@@ -6,9 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Dog of the Day' });
 });
 
-fetch("https://dog.ceo/api/breeds/image/random");
-  .then(response => console.log(response));
-  .catch(error => console.error(error));
+
 
 
 module.exports = router;
