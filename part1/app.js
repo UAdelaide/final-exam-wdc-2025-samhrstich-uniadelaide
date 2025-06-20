@@ -93,6 +93,7 @@ let db;
     }
 })();
 
+(async *
 const [ratings] = await db.execute('SELECT * FROM WalkRatings');
 console.log('WalkRatings:', ratings);
 
