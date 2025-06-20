@@ -93,6 +93,9 @@ let db;
     }
 })();
 
+
+app.get('/api/dogs', async)
+
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 
