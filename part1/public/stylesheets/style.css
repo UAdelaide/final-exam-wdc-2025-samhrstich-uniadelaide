@@ -8,8 +8,8 @@ body {
 h1 {
   color:green;
   position:absolute;
-  bottom:30px;
-  right:30px;
+  bottom:200px;
+  right:120px;
 }
 #app {
   color: #00B7FF;
