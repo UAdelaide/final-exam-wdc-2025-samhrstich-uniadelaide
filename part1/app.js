@@ -117,7 +117,13 @@ app.get('/api/dogs', async (req, res) => {
     }
 });
 
-app.get('/api/walkrequests/open', async)
+app.get('/api/walkrequests/open', async (req, res) => {
+    try {
+        const query = `
+        SELECT
+            WR.`
+    }
+})
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
