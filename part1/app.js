@@ -121,7 +121,8 @@ app.get('/api/walkrequests/open', async (req, res) => {
     try {
         const query = `
         SELECT
-            WR.`
+            wr.request_id,
+            d.name`
     }
 })
 
