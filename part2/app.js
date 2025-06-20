@@ -14,8 +14,8 @@ app.use
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
 
-app.get('/login') async (req, res) => {
-    const 
+app.get('/login'), (req, res) => {
+    const {username, password} = req.body
 }
 
 app.use('/api/walks', walkRoutes);
