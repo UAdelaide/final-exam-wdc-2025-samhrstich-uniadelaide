@@ -89,7 +89,8 @@ let db;
         }
 
     } catch (err) {
-        console.log("errro with database")
+        console.log('Error With database', err);
+    }
     }
 })
 
