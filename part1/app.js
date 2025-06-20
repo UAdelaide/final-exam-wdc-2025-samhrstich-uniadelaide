@@ -111,8 +111,10 @@ app.get('/api/dogs', async (req, res) => {
     } catch (error) {
         console.log(error);
         res.status(500).json({
-            error: 'Failed to Retr'
-        })
+            error: 'Failed to Retrieve dogs',
+            message: error.message
+        });
+        
     }
     }
 })
