@@ -16,7 +16,7 @@ h1 {
   position:relative;
   justify-content:right;
   align-content:end;
-  background: linear-gradient(to right, rgb(3, 0, 176), rgb(0, 0, 0));
+  background: linear-gradient(to right, rgb(2, 0, 97), rgb(0, 0, 0));
   border: 10px dashed rgb(0, 0, 0);
   left: 100px;
 
