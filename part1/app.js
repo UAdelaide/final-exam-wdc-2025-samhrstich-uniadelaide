@@ -177,8 +177,9 @@ app.get('/api/walkers/summary', async (req, res) => {
     } catch(error) {
     console.log('error in the json', error);
     res.status(500).json({
-        error: 'Failed to '
-    })
+        error: 'Failed to retieve the wlakers summaries',
+        message: error.message
+    });
 
     }
 })
