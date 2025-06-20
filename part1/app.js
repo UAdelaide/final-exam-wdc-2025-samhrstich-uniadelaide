@@ -124,7 +124,9 @@ app.get('/api/walkrequests/open', async (req, res) => {
             wr.request_id,
             d.name as d_name,
             wr.requested_time,
-            `
+            wr.duration_minutes,
+            wr.location,
+            u.username`
     }
 })
 
