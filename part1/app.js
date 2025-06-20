@@ -58,6 +58,9 @@ let db;
                 ((SELECT user_id FROM Users WHERE username = 'colepalmer'), 'Flop', 'medium')
             `);
 
+            await db.execute(`
+                INSERT INTO `)
+
         }
     }
 })
