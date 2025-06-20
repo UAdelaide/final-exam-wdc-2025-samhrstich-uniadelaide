@@ -154,7 +154,8 @@ app.get('/api/walkers/summary', async (req, res) => {
             CASE
                 WHEN COUNT(wr.rating_id) > 0 THEN ROUND(AVG(wr.rating), 1)
                 ELSE NULL
-            END `
+            END as average_rating,
+            C`
     }
 })
 
