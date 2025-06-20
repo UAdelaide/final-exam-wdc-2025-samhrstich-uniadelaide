@@ -138,7 +138,9 @@ app.get('/api/walkrequests/open', async (req, res) => {
     res.join[rows];
     } catch (error) {
         console.log('Error grabbing the walkrequests', error);
-        
+        res.status(500).json({
+            error: 'Failed to reteieve a'
+        })
     }
     }
     }
