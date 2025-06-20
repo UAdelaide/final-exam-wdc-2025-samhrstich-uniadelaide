@@ -157,7 +157,10 @@ app.get('/api/walkers/summary', async (req, res) => {
             END as average_rating,
             COALESCE(completed_walks.completed_count, 0) as completed_walks
         FROM Users u
-        LEFT JOIN WalkRatings wr ON u.user_id = `
+        LEFT JOIN WalkRatings wr ON u.user_id = wr.walker_id
+        LEFT JOIN (
+        SELECT
+        wa.walker)`
     }
 })
 
