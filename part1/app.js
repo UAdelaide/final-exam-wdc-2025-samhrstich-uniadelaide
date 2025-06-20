@@ -77,6 +77,7 @@ let db;
                 SET  status= 'completed'
                 WHERE requests_id IN (2, 3)
             `);
+            await db
         }
     }
 })
