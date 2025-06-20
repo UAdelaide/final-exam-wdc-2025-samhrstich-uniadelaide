@@ -35,7 +35,7 @@
         methods: {
             async fetchDog() {
                 const res = await fetch('https://dog.ceo/api/breeds/image/random')
-                const  data = res.json();
+                const  data = await res.json();
                 this.dogImage = data.message;
             }
         }
