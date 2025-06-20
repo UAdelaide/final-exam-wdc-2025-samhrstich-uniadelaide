@@ -114,10 +114,10 @@ app.get('/api/dogs', async (req, res) => {
             error: 'Failed to Retrieve dogs',
             message: error.message
         });
-        
     }
-    }
-})
+});
+
+app.get('')
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
