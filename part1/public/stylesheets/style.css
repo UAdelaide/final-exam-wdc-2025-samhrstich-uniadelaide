@@ -18,7 +18,7 @@ body {
 
 }
 #app:hover {
-  transform: translateX
+  transform: translateX(500px);
 
 
 }
