@@ -2,7 +2,7 @@ body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   display:flex;
-  background-color:rgba(61, 57, 115, 0.651);
+  background-color:rgb(61, 57, 115);
 
 }
 h1 {
