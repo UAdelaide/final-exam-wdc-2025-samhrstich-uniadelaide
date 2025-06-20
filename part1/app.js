@@ -141,11 +141,9 @@ app.get('/api/walkrequests/open', async (req, res) => {
         res.status(500).json({
             error: 'Failed to reteieve walk requests',
             message: error.message
-        })
+        });
     }
-    }
-    }
-})
+});
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
