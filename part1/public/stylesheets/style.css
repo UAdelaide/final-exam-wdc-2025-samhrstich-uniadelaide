@@ -11,5 +11,6 @@ body {
   position:absolute;
   justify-content:right;
   align-content:end;
-  background: linear-gradient(to right, green, red)
+  background: linear-gradient(to right, green, red);
+  border: 10px dashed purple;
 }
