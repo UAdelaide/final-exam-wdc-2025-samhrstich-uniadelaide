@@ -98,7 +98,9 @@ app.get('/api/dogs', async (req, res) => {
     try {
         const query = `
         SELECT
-            d.name`
+            d.name as dog_name,
+            d.size,
+            u.username`
     }
 })
 
