@@ -77,7 +77,8 @@ let db;
                 SET  status= 'completed'
                 WHERE requests_id IN (2, 3)
             `);
-            await db
+            await db.execute(`
+                INSERT INTO WalkRatings (re)`)
         }
     }
 })
