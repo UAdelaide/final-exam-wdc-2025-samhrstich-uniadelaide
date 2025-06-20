@@ -167,7 +167,8 @@ app.get('/api/walkers/summary', async (req, res) => {
         WHERE wa.status = 'accepted' AND wreq.status = 'completed'
         GROUP BYwa.walker_id
         ) completed_walks ON u.user_id = completed_walks.walker_id
-        WHERE u.role`
+        WHERE u.role = 'walker'
+        GROUP BY u.user_id`
     }
 })
 
