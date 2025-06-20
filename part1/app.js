@@ -161,7 +161,8 @@ app.get('/api/walkers/summary', async (req, res) => {
         LEFT JOIN (
         SELECT
         wa.walker_id,
-        COUNT(*) as completed_count)`
+        COUNT(*) as completed_count
+        FROM WalkApplications wa )`
     }
 })
 
