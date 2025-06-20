@@ -67,7 +67,7 @@ let db;
                 ((SELECT dog_id FROM Dogs WHERE name = 'Flop'), '2025-09-14 11:25:00', 35, 'Stamford Bridge', 'accepted');
             `);
             await db.execute()(`
-                INSERT INTO WalkAppli`)
+                INSERT INTO WalkApplications (request_id, walker_id, status)`)
         }
     }
 })
