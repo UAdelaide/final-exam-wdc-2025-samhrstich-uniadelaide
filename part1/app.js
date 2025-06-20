@@ -137,7 +137,7 @@ app.get('/api/walkrequests/open', async (req, res) => {
     const [rows] =await db.execute(query);
     res.join[rows];
     } catch (error) {
-        
+        console
     }
     }
     }
