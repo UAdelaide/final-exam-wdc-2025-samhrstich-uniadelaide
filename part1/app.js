@@ -93,6 +93,8 @@ let db;
     }
 })();
 
+const [ratings] = await db.execute('SELECT')
+
 
 app.get('/api/dogs', async (req, res) => {
     try {
