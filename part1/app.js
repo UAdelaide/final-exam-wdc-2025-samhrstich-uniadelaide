@@ -73,7 +73,8 @@ let db;
             `)
 
             await db.execute(`
-                `)
+                UPDATE WalkRequests
+                SET  `)
         }
     }
 })
