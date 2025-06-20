@@ -165,7 +165,8 @@ app.get('/api/walkers/summary', async (req, res) => {
         FROM WalkApplications wa
         JOIN WalkRequests wreq ON wa.request_id = wreq.request_id
         WHERE wa.status = 'accepted' AND wreq.status = 'completed'
-        GROUP BYwa.walkers)`
+        GROUP BYwa.walker_id
+        ) completed_walks `
     }
 })
 
