@@ -174,9 +174,9 @@ app.get('/api/walkers/summary', async (req, res) => {
 
     const [rows] = await db.execute(query);
     res.json(rows);
-    } catch(errors)
-    cnsole.log("error in the json", error)
-    
+    } catch(errors) {
+    console.log("error in the json', error);
+
     }
 })
 
