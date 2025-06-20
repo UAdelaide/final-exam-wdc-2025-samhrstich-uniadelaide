@@ -19,7 +19,7 @@ h1 {
   background: linear-gradient(to right, rgb(2, 0, 97), rgb(0, 0, 0));
   border: 10px dashed MAGENTA;
   left: 100px;
-
+  text-align:center;
 
 }
 #app:hover {
