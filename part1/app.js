@@ -33,8 +33,9 @@ let db;
             user: 'root',
             password: '',
             database: 'DogWalkService'
+        });
 
-    })
+        await db.execute
     }
 })
 
