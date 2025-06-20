@@ -166,7 +166,8 @@ app.get('/api/walkers/summary', async (req, res) => {
         JOIN WalkRequests wreq ON wa.request_id = wreq.request_id
         WHERE wa.status = 'accepted' AND wreq.status = 'completed'
         GROUP BYwa.walker_id
-        ) completed_walks ON u.user_id = completed `
+        ) completed_walks ON u.user_id = completed_walks.walker_id
+        WHERE u.role`
     }
 })
 
