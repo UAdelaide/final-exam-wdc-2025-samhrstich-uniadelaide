@@ -66,7 +66,7 @@ let db;
                 ((SELECT dog_id FROM Dogs WHERE name = 'Rufus'), '2025-04-15 12:30:00', 30, 'Hindley Street', 'open'),
                 ((SELECT dog_id FROM Dogs WHERE name = 'Flop'), '2025-09-14 11:25:00', 35, 'Stamford Bridge', 'accepted');
             `);
-            await db.execute()(`
+            await db.execute(`
                 INSERT INTO WalkApplications (request_id, walker_id, status) VALUES
                 (2, (SELECT user_id FROM Users WHERE username = 'bobwalker'), 'accepted),
                 (3, (SELECT user_id FROM Users WHERE username = 'bobwalker'), 'accepted')
