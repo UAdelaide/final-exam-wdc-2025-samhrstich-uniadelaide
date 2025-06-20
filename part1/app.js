@@ -107,7 +107,10 @@ app.get('/api/dogs', async (req, res) => {
     `;
 
     const [rows]= await db.execute(query);
-    res.join(reo)
+    res.join(rows);
+    } catch (error) {
+        
+    }
     }
 })
 
