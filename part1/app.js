@@ -100,7 +100,8 @@ app.get('/api/dogs', async (req, res) => {
         SELECT
             d.name as dog_name,
             d.size,
-            u.username`
+            u.username as owner_username
+        FROM `
     }
 })
 
