@@ -6,6 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-fetch("")
+fetch("https://dog.ceo/api/breeds/image/random");
+
 
 module.exports = router;
