@@ -35,10 +35,10 @@
             async fetchDog() {
                 const res = await fetch('https://dog.ceo/api/breeds/image/random')
                 const  data = awaitres.json();
-                this.dog
+                this.dogImage = data.message;
             }
         }
-    })
+    }).mount('#app')
 </script>
 </body>
 </html>
