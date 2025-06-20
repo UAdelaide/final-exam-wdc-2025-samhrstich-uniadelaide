@@ -91,8 +91,7 @@ let db;
     } catch (err) {
         console.log('Error With database', err);
     }
-    }
-})
+}())
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
