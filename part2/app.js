@@ -28,7 +28,9 @@ app.post('/login', async (req, res) => {
             'SELECT user_id, username, email, password_hash, role FROM Users WHERE username =?',
             [username]
         );
-        if (rows.length ===0)
+        if (rows.length ===0) {
+            return res.redirect('/?')
+        }
     }
 })
 
