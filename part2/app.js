@@ -12,8 +12,9 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '/public')));
 
-// using the express session middleware to create a session for each user 
+// using the express session middleware to create a session for each user
 app.use(session({
+    //random secret string
     secret: 'secretkey1234',
     resave: false,
     saveUninitialized: false,
