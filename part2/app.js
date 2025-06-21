@@ -1,7 +1,7 @@
 const express = require('express');
 const session = require('express-session');
 const path = require('path');
-const db = require('./')
+const db = require('./models/db');
 require('dotenv').config();
 
 const app = express();
@@ -9,7 +9,7 @@ const app = express();
 // Middleware
 app.use(express.json());
 app.use(express.static(path.join(__dirname, '/public')));
-app.use
+app.use()
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
