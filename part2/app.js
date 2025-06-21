@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '/public')));
-app.use('/api/users', requireAuth, userRoutes);
+
 
 // using the express session middleware to create a session for each user
 app.use(session({
@@ -83,6 +83,7 @@ const userRoutes = require('./routes/userRoutes');
 
 app.use('/api/walks', walkRoutes);
 app.use('/api/users', userRoutes);
+app.use('/api/users', requireAuth, userRoutes);
 
 // Export the app instead of listening here
 module.exports = app;
