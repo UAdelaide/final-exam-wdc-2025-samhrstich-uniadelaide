@@ -1,7 +1,7 @@
 const express = require('express');
 const session = require('express-session');
 const path = require('path');
-
+// setting up a connection to the database
 const db = require('./models/db');
 require('dotenv').config();
 
