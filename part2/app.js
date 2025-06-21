@@ -60,8 +60,9 @@ app.post('/logout', (req, res) => {
         if (err) {
             console.error('Logout erro:', err);
         }
-    })
-})
+        res.redirect('/');
+    });
+});
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
