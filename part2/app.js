@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '/public')));
-app.use('')
+app.use('/api/users', requireAuth, userRoutes)
 
 // using the express session middleware to create a session for each user
 app.use(session({
