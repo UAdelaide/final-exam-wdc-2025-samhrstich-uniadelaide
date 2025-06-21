@@ -47,7 +47,7 @@ app.post('/login', async (req, res) => {
         } else if (user.role === 'walker') {
             res.redirect('/walker-dashboard.html');
         } else {
-            
+            res.redirect('/?error')
         }
     }
 })
