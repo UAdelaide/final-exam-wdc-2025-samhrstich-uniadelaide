@@ -96,7 +96,7 @@
             error.value = 'Failed to load walk requests';
           }
         }
-
+        // funnction to load all of the owners dogs
         async function loadUserDogs() {
           try {
             const res = await fetch('/api/users/dogs');
@@ -135,7 +135,7 @@
 
         onMounted(() => {
           loadWalks();
-          loadUserDogs(); 
+          loadUserDogs();
         });
 
         return {
