@@ -66,7 +66,7 @@ app.post('/logout', (req, res) => {
         res.redirect('/');
     });
 });
-// 
+// checks whether a user is logged in. 
 const requireAuth = (req, res, next) => {
     if (req.session.user_Id) {
         next();
