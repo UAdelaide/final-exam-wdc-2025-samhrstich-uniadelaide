@@ -37,7 +37,8 @@ app.post('/login', async (req, res) => {
             return res.redirect('/?error=Inavalid Username or password');
         }
 
-        req.session.user_Id
+        req.session.user_Id = user.user_id;
+        req.session.username = user
     }
 })
 
