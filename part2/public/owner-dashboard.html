@@ -103,7 +103,7 @@
             if (!res.ok) throw new Error('failed to load');
             userDogs.value = await res.json();
           } catch (err) {
-            error.value = "Failed to load ypu"
+            error.value = "Failed to load your dogs "
           }
         }
 
@@ -135,6 +135,7 @@
 
         onMounted(() => {
           loadWalks();
+          loadUserDogs();
         });
 
         return {
