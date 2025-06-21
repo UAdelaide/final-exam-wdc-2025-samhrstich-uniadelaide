@@ -55,7 +55,9 @@ app.post('/login', async (req, res) => {
     }
 });
 
-app.post('/L')
+app.post('/logout', (req, res) => {
+    req.session
+})
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
