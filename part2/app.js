@@ -34,8 +34,10 @@ app.post('/login', async (req, res) => {
         const user = rows[0];
 
         if (user.password_hash !== password ) {
-            return res.redirect('/?error=Inavalid Username or password')
+            return res.redirect('/?error=Inavalid Username or password');
         }
+
+        req.session.user_Id
     }
 })
 
