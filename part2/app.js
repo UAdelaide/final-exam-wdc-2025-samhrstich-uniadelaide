@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '/public')));
 
-
+// cnf
 app.use(session({
     secret: 'secretkey1234',
     resave: false,
