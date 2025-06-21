@@ -27,7 +27,7 @@ app.post('/login', async (req, res) => {
 
     try {
         const [rows] = await db.execute(
-            
+
             'SELECT user_id, username, email, password_hash, role FROM Users WHERE username =?',
             [username]
         );
@@ -35,7 +35,7 @@ app.post('/login', async (req, res) => {
             return res.redirect('/?error=Invalid Username or Password');
         }
         const user = rows[0];
-
+// if the password and the password entered do not much then return an error
         if (user.password_hash !== password ) {
             return res.redirect('/?error=Inavalid Username or password');
         }
