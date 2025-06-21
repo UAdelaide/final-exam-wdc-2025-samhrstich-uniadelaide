@@ -51,9 +51,9 @@ app.post('/login', async (req, res) => {
         }
     } catch (error) {
         console.error('Login error',error);
-        res.redirect('/?error=ServerError')
+        res.redirect('/?error=ServerError');
     }
-})
+});
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
