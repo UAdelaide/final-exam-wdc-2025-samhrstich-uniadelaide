@@ -21,7 +21,7 @@ app.use(session({
     cookie: {secure: true}
 }));
 
-// this route will handle all the login requests 
+// this route will handle all the login requests sending the credidentials into the 
 app.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
