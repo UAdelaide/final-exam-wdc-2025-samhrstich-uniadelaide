@@ -64,6 +64,10 @@ app.post('/logout', (req, res) => {
     });
 });
 
+const requireAuth = (req, res, next) => {
+    
+}
+
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
 const userRoutes = require('./routes/userRoutes');
