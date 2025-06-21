@@ -50,7 +50,7 @@ app.post('/login', async (req, res) => {
             res.redirect('/?error=Invalid role');
         }
     } catch (error) {
-        
+        console.error('Login error',)
     }
 })
 
