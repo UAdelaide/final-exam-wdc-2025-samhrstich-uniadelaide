@@ -31,7 +31,9 @@ app.post('/login', async (req, res) => {
         if (rows.length ===0) {
             return res.redirect('/?error=Invalid Username or Password');
         }
-        const user
+        const user = rows[0];
+
+        if (user.password)
     }
 })
 
