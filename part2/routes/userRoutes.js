@@ -66,7 +66,9 @@ router.get('/dogs', async (req, res)=> {
       WHERE owner_id = ?
       `, [req.session.user_Id]);
       res.json(rows);
-      
+
+  } catch (error) {
+    console.error
   }
 })
 
