@@ -23,7 +23,9 @@ app.use(session({
 app.post('/login', async (req, res) => {
     const { username, password } = req.body;
 
-    
+    try {
+        const [rows] = await
+    }
 })
 
 // Routes
