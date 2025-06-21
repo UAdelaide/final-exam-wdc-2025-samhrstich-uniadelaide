@@ -51,7 +51,7 @@ app.post('/login', async (req, res) => {
         }
     } catch (error) {
         console.error('Login error',error);
-        res.redirect('')
+        res.redirect('/?error=ServerError')
     }
 })
 
