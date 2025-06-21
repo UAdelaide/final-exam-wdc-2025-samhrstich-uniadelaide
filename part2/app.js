@@ -25,7 +25,7 @@ app.post('/login', async (req, res) => {
 
     try {
         const [rows] = await db.execute(
-            'SELECT user_id, username'
+            'SELECT user_id, username, email, password_hash, role FROM Users WHERE '
         )
     }
 })
