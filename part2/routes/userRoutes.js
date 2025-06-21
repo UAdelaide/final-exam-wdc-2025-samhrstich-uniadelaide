@@ -55,6 +55,8 @@ router.post('/login', async (req, res) => {
   }
 });
 
-router.get('/dogs', async (req, res))
+router.get('/dogs', async (req, res)=> {
+  if (!req.session.user_Id)
+})
 
 module.exports = router;
