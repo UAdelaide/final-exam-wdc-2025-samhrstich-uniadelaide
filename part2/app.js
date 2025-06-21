@@ -16,8 +16,11 @@ app.use(session({
     secret: 'secretkey1234',
     resave: false,
     saveUninitialized: false,
-    cookie: 
-}))
+    cookie: {secure: true}
+}));
+
+
+app.post('/login')
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
