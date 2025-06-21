@@ -68,7 +68,7 @@ router.get('/dogs', async (req, res)=> {
       res.json(rows);
 
   } catch (error) {
-    console.error
+    console.error('error grabbing user dogs', error);
   }
 })
 
