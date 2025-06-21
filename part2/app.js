@@ -20,7 +20,9 @@ app.use(session({
 }));
 
 
-app.post('/login')
+app.post('/login', async (req, res) => {
+    const {username, password}
+})
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
