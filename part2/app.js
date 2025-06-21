@@ -27,7 +27,8 @@ app.post('/login', async (req, res) => {
         const [rows] = await db.execute(
             'SELECT user_id, username, email, password_hash, role FROM Users WHERE username =?',
             [username]
-        )
+        );
+        if (rows.length ===0)
     }
 })
 
