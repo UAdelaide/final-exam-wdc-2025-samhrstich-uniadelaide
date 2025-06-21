@@ -44,7 +44,9 @@ app.post('/login', async (req, res) => {
         if (user.role === 'owner') {
             res.redirect('/owner-dashboard.html');
 
-        } else if (usern)
+        } else if (user.role === 'walker') {
+            res.redirec
+        }
     }
 })
 
