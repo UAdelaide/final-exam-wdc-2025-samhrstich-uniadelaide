@@ -65,7 +65,7 @@ app.post('/logout', (req, res) => {
 });
 
 const requireAuth = (req, res, next) => {
-    
+    if (req.session.user_id)
 }
 
 // Routes
