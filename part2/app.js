@@ -39,7 +39,7 @@ app.post('/login', async (req, res) => {
         if (user.password_hash !== password ) {
             return res.redirect('/?error=Inavalid Username or password');
         }
-
+        //storing the users info in the session
         req.session.user_Id = user.user_id;
         req.session.username = user.username;
         req.session.role = user.role;
