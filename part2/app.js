@@ -11,6 +11,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '/public')));
+app.use('')
 
 // using the express session middleware to create a session for each user
 app.use(session({
@@ -66,7 +67,7 @@ app.post('/logout', (req, res) => {
         res.redirect('/');
     });
 });
-// checks whether a user is logged in. 
+// checks whether a user is logged in.
 const requireAuth = (req, res, next) => {
     if (req.session.user_Id) {
         next();
