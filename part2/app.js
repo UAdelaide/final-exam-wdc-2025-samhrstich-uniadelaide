@@ -68,9 +68,9 @@ const requireAuth = (req, res, next) => {
     if (req.session.user_Id) {
         next();
     } else {
-        res.redirect('/?error=Please')
+        res.redirect('/?error=Please log in')
     }
-}
+};
 
 // Routes
 const walkRoutes = require('./routes/walkRoutes');
