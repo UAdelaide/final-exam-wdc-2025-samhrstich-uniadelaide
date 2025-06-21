@@ -102,6 +102,8 @@
             const res = await fetch('/api/users/dogs');
             if (!res.ok) throw new Error('failed to load');
             userDogs.value = await res.json();
+          } catch (err) {
+            error.value = "Failed to load ypu"
           }
         }
 
