@@ -57,7 +57,10 @@ router.post('/login', async (req, res) => {
 
 router.get('/dogs', async (req, res)=> {
   if (!req.session.user_Id) {
-    return res.status(401).json
+    return res.status(401).json({ error: 'Not logged in'});
+  }
+  try {
+    
   }
 })
 
