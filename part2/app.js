@@ -27,6 +27,7 @@ app.post('/login', async (req, res) => {
 
     try {
         const [rows] = await db.execute(
+            // the question mark is a 
             'SELECT user_id, username, email, password_hash, role FROM Users WHERE username =?',
             [username]
         );
