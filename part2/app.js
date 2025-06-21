@@ -21,7 +21,9 @@ app.use(session({
 
 
 app.post('/login', async (req, res) => {
-    const {username, password}
+    const { username, password } = req.body;
+
+    
 })
 
 // Routes
