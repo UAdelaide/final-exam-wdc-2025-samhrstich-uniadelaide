@@ -1,14 +1,14 @@
 const express = require('express');
 const session = require('express-session');
 const path = require('path');
-//const db = require('./models/db');
+const db = require('./models/db');
 require('dotenv').config();
 
 const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '/public')));
 
 
