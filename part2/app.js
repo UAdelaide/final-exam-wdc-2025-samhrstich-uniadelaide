@@ -57,7 +57,7 @@ app.post('/login', async (req, res) => {
         res.redirect('/?error=ServerError');
     }
 });
-
+// handles the logout and deletes the current session redirecting to the l
 app.post('/logout', (req, res) => {
     req.session.destroy((err) => {
         if (err) {
