@@ -100,7 +100,8 @@
         async function loadUserDogs() {
           try {
             const res = await fetch('/api/users/dogs');
-            if (!res.ok) throw new Error
+            if (!res.ok) throw new Error('failed to load');
+            userDogs.value = await res.json();
           }
         }
 
