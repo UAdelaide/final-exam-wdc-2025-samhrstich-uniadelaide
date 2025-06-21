@@ -33,7 +33,9 @@ app.post('/login', async (req, res) => {
         }
         const user = rows[0];
 
-        if (user.password)
+        if (user.password_hash !== password ) {
+            return res.redirect('/')
+        }
     }
 })
 
